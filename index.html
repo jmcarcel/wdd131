@@ -10,35 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
    <header>
        <h1>WDD 131 - Dynamic Web Fundamentals - Joan Carcel</h1>
        <nav>
-            <ul>
+            <ul class="info">
                 <li><a href="https://www.linkedin.com/in/joan-carcel-713641316/">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/17?lang=eng&id=p3#p3">Scripture</a></li>
                 <li><a href="projects.html">Final Project</a></li>
-            </ul>
+            </ul>    
        </nav>
    </header>
    <main>
         <section class="card">
-            <h2></h2>
-            <img src="" alt="">
+            <h2>About me</h2>
+            <img src="images/profile.webp" alt="Joan">
+            <p>My name is Joan Carcel, I am from Argentina. I am a student at BYU-Idaho, studying Web Development. I am currently working as a teacher. I'm married and I have two children</p>
+            <img src="images/Flag_of_Argentina.svg.png" alt="Argentina Flag" width="200">
+            
         </section>
         <section class="card">
-            <h3></h3>
-            <img src="" alt="">
+            <h3>Web Dev Resourses</h3>
+            <nav>
+                <ul class="resources">
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                </ul>
+            </nav>
         </section>
    </main>
    <footer>
-         <p>&copy; Joan Carcel - Argentina<span id="currentyear"></span></p>
-         <p>Last Updated: <span id="lastModified"></span></p>
-         <script>
-              document.getElementById('lastUpdated').textContent = document.lastModified;
-         </script>
+         <p>&copy;<span id="currentYear"></span> Joan Carcel - Argentina</p>
+         <p>Last Modification: <span id="lastModified"></span></p>
    </footer> 
 </body>
 </html>
