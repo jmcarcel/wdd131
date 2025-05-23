@@ -46,7 +46,7 @@ main {
     height: auto;
     border: 2px solid #295274;
 }
-h2, h3 {
+h2 {
     background-color: #295274;
     color: #ffcc00;
     padding: 10px;
