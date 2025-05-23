@@ -30,6 +30,7 @@ main {
     grid-template-columns: 2fr 1fr;
     background-color: #295274;
     text-align: center;
+    max-width: 1500px;
 }
 .card {
     background-color: #fff;
