@@ -69,7 +69,7 @@ main {
     background-color: var(--color-background);
     color: var(--color-text);
 }
-h1 {
+h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: var(--color-text);
