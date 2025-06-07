@@ -73,6 +73,7 @@ footer {
     width: 100%;
 }
 
+
 @media (max-width: 700px) {
     .data-card, .weather-card {
         position: static;
@@ -86,4 +87,9 @@ footer {
     .hero-image img {
         height: auto;
     }
+    ::after {
+    content: '';
+    display: block;
+    height: 50px;
+}
 }
