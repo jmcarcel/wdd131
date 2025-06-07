@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosario, Argentina</title>
+    <meta name="description" content="My home place">
+    <meta name="author" content="Joan Carcel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Rosario, Argentina</h1>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/rosario-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/rosario-medium.webp" media="(min-width: 750px)">
+                <img src="images/rosario-small.webp" alt="Rosario, Argentina" width="500" height="250">
+            </picture>
+        </div>
+        <div class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Country:</strong> Argentina</li>
+                <li><strong>Province:</strong> Santa Fe</li>
+                <li><strong>Population:</strong> 1,200,000</li>
+                <li><strong>Area:</strong> 178 km²</li>
+                <li><strong>Language:</strong> Spanish</li>
+                <li><strong>Founded:</strong> 1793</li>
+            </ul>    
+        </div>
+        <div class="weather-card">
+            <h2>Weather</h2>
+            <img src="images/weather.webp" alt="weathericon">
+            <p><strong>Temperature:</strong> <span id="temp" class="value"> </span>°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind" class="value"> </span></p>
+            <p><strong>Wind Chill:</strong> <span id="windChill" class="value"> </span>°C</p>
+        </div>
+    </div>    
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Joan Carcel - Argentina</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
