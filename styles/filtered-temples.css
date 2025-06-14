@@ -1,0 +1,116 @@
+:root {
+    --color-background: #f0f0f0;
+    --color-text: #333;
+    --color-link: #62acfa;
+    --color-link-hover: #0056b3;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+header {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 1rem;
+    background-color: var(--color-link);
+    color: var(--color-text);
+    padding: 10px;
+    margin: 0 auto;
+}
+header p {
+    font-size: 30px;
+    margin: 0;
+}
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.show::before {
+	content: "X";
+}
+.navigation a:hover,
+.navigation a:active {
+	color: white;
+	background-color: black;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    padding: 1rem;
+    font-size: larger;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--color-background);
+    background-color: var(--color-link-hover);
+}
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--color-text);
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    place-items: center;
+}
+p {
+    font-size: 1.2em;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-link);
+    color: var(--color-text);
+}
+@media only screen and (min-width: 40em) {
+	h1 {
+		font-size: 2rem;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
