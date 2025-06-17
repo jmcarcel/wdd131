@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review Form</h1>
+        <form action="review.html" method="get" class="form">
+            <fieldset>
+                <label for="product">Product Name</label>
+                <select name="productname" id="product" required>
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+                <label>Overall Rating</label>
+                <div class="rating">     
+                    <input type="radio" name="rating" id="star1" value="1" required>
+                    <label for="star1"></label>
+                    <input type="radio" name="rating" id="star2" value="2">
+                    <label for="star2"></label>
+                    <input type="radio" name="rating" id="star3" value="3">
+                    <label for="star3"></label>
+                    <input type="radio" name="rating" id="star4" value="4">
+                    <label for="star4"></label>
+                    <input type="radio" name="rating" id="star5" value="5">
+                    <label for="star5"></label>
+                </div>
+                <label for="installationdate">Date of Installation</label>
+                <input type="date" name="installationdate" id="installationdate" class="insdate" required>
+            
+                <Label></Label>
+                <label>Useful Features</label>
+                <p>Select the features you find useful:</p>
+                <p>(Check all that apply)</p>
+                <div>
+                    <label for="durability"><input type="checkbox" name="features" id="durability" value="Feature 1">Durability</label>
+                    <label for="ease"><input type="checkbox" name="features" id="ease" value="Feature 2">Ease</label>
+                    <label for="Performance"><input type="checkbox" name="features" id="Performance" value="Feature 3">Performance</label>
+                    <label for="design"><input type="checkbox" name="features" id="design" value="Feature 4">Design</label>
+                    
+                </div>
+                <label for="review">Written review</label>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+                <label>Your Name</label>
+                <input type="text" name="yourname" id="yourname">
+
+                <input type="submit" value="Post Review">
+            </fieldset>    
+        </form>
+    </main>
+    <footer>
+         <p>&copy;<span id="currentYear"></span> Joan Carcel - Argentina</p>
+         <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
