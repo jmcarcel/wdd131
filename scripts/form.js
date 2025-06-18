@@ -39,3 +39,7 @@ products.forEach(product => {
   option.textContent = `${product.name} (${product.averagerating} stars)`;
   productSelect.appendChild(option);
 });
+let numVisits = localStorage.getItem("numVisits");
+if (numVisits === null) {
+  numVisits = 0;
+}
